@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
- namespace DraperStudio\Eloquent\Uuid;
+namespace DraperStudio\Eloquent\Uuid;
 
 /**
  * Class UuidModel.
@@ -18,17 +18,11 @@
  */
 trait UuidModel
 {
-    /**
-     *
-     */
     public static function bootUuidTrait()
     {
         static::observe(new UuidObserver());
     }
 
-    /**
-     *
-     */
     public function generateUuid()
     {
         $strategy = $this->uuidStrategy();

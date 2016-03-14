@@ -11,8 +11,6 @@
 
 namespace DraperStudio\Tests\Eloquent\Uuid;
 
-use GrahamCampbell\TestBench\AbstractPackageTestCase;
-
 /**
  * This is the abstract test case class.
  *

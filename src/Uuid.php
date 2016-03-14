@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
- namespace DraperStudio\Eloquent\Uuid;
+namespace DraperStudio\Eloquent\Uuid;
 
 use Ramsey\Uuid\Uuid as RamseyUuid;
 
