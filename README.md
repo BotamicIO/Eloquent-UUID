@@ -11,7 +11,37 @@ $ composer require faustbrian/eloquent-uuid
 ## Usage
 
 ``` php
-To-Do...
+<?php
+
+namespace App;
+
+use BrianFaust\Uuid\HasUuid;
+use Illuminate\Database\Eloquent\Model;
+
+class Provider extends Model
+{
+    use HasUuid;
+
+    /**
+     * Indicates if the IDs are auto-incrementing.
+     *
+     * @var bool
+     */
+    public $incrementing = false;
+
+    /**
+     * Get the options for generating the uuid.
+     */
+    public function getUuidOptions() : UuidOptions
+    {
+        return UuidOptions::create()
+            ->saveTo('uuid')
+            ->useStrategy('uuid3')
+            ->withNamespace(\Ramsey\Uuid\Uuid::NAMESPACE_DNS)
+            ->withName('php.net');
+    }
+}
+
 ```
 
 ## Security

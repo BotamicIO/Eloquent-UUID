@@ -1,7 +1,7 @@
 {
     "name": "faustbrian/eloquent-uuid",
-    "description": "Adds UUID support to Eloquent models",
-    "keywords": ["laravel", "framework", "Eloquent-UUID", "Eloquent UUID", "Brian Faust", "faustbrian"],
+    "description": "Generate UUIDs when saving Eloquent models",
+    "keywords": ["laravel", "framework", "Laravel-UUID", "Laravel UUID", "Brian Faust", "faustbrian"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
@@ -10,9 +10,10 @@
         "role": "Developer"
     }],
     "require": {
-        "php": "^5.6 || ^7.0",
+        "php": ">=7.0.0",
         "illuminate/database": "5.1.* || 5.2.* || 5.3.*",
-        "ramsey/uuid": "^3.1"
+        "illuminate/support": "5.1.* || 5.2.* || 5.3.*",
+        "ramsey/uuid": "^3.5"
     },
     "require-dev": {
         "graham-campbell/testbench": "^3.1",
@@ -22,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Eloquent\\Uuid\\": "src/"
+            "BrianFaust\\Uuid\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Eloquent\\Uuid\\": "tests"
+            "BrianFaust\\Tests\\Uuid\\": "tests"
         }
     },
     "config": {
