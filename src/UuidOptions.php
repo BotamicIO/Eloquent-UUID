@@ -7,7 +7,7 @@ use Ramsey\Uuid\Uuid;
 class UuidOptions
 {
     /** @var string */
-    public $uuidField = 'id';
+    public $uuidField = 'uuid';
 
     /** @var string */
     public $strategy = 'uuid4';
