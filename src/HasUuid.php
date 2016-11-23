@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Eloquent UUID.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Uuid;
 
 use Illuminate\Database\Eloquent\Model;
@@ -90,7 +99,7 @@ trait HasUuid
      */
     protected function guardAgainstInvalidUuidOptions()
     {
-        if (!strlen($this->uuidOptions->uuidField)) {
+        if (! strlen($this->uuidOptions->uuidField)) {
             throw InvalidOption::missingUuidField();
         }
     }
