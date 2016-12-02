@@ -99,7 +99,7 @@ trait HasUuid
      */
     protected function guardAgainstInvalidUuidOptions()
     {
-        if (! strlen($this->uuidOptions->uuidField)) {
+        if (!strlen($this->uuidOptions->uuidField)) {
             throw InvalidOption::missingUuidField();
         }
     }
