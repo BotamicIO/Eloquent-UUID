@@ -41,7 +41,7 @@ trait HasUuid
     /**
      * Boot the trait.
      */
-    protected static function bootHasUuid()
+    protected static function bootHasUuid(): void
     {
         static::creating(function (Model $model) {
             $model->addUuid();
@@ -51,7 +51,7 @@ trait HasUuid
     /**
      * Add the uuid to the model.
      */
-    protected function addUuid()
+    protected function addUuid(): void
     {
         $this->uuidOptions = $this->getUuidOptions();
 
@@ -108,7 +108,7 @@ trait HasUuid
     /**
      * This function will throw an exception when any of the options is missing or invalid.
      */
-    protected function guardAgainstInvalidUuidOptions()
+    protected function guardAgainstInvalidUuidOptions(): void
     {
         if (!strlen($this->uuidOptions->uuidField)) {
             throw InvalidOption::missingUuidField();

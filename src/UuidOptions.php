@@ -38,7 +38,7 @@ class UuidOptions
     /** @var string */
     public $name = 'php.net';
 
-    public static function create(): UuidOptions
+    public static function create(): self
     {
         return new static();
     }
@@ -48,7 +48,7 @@ class UuidOptions
      *
      * @return \BrianFaust\Uuid\UuidOptions
      */
-    public function saveTo(string $fieldName): UuidOptions
+    public function saveTo(string $fieldName): self
     {
         $this->uuidField = $fieldName;
 
@@ -60,7 +60,7 @@ class UuidOptions
      *
      * @return \BrianFaust\Uuid\UuidOptions
      */
-    public function useStrategy(string $strategy): UuidOptions
+    public function useStrategy(string $strategy): self
     {
         $this->strategy = $strategy;
 
@@ -72,7 +72,7 @@ class UuidOptions
      *
      * @return \BrianFaust\Uuid\UuidOptions
      */
-    public function withNamespace(string $namespace): UuidOptions
+    public function withNamespace(string $namespace): self
     {
         $this->namespace = $namespace;
 
@@ -84,7 +84,7 @@ class UuidOptions
      *
      * @return \BrianFaust\Uuid\UuidOptions
      */
-    public function withName(string $name): UuidOptions
+    public function withName(string $name): self
     {
         $this->name = $name;
 

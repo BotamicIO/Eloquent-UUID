@@ -26,7 +26,7 @@ use Exception;
 
 class InvalidOption extends Exception
 {
-    public static function missingUuidField()
+    public static function missingUuidField(): self
     {
         return new static('Could not determinate in which field the uuid should be saved');
     }
