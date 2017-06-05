@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Uuid\Traits;
 
-use BrianFaust\Uuid\UuidOptions;
 use BrianFaust\Uuid\Exceptions\InvalidOption;
+use BrianFaust\Uuid\UuidOptions;
 use Illuminate\Database\Eloquent\Model;
 use Ramsey\Uuid\Uuid;
 
