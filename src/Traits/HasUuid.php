@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Eloquent UUID.
  *
@@ -12,8 +9,10 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Uuid;
+namespace BrianFaust\Uuid\Traits;
 
+use BrianFaust\Uuid\UuidOptions;
+use BrianFaust\Uuid\Exceptions\InvalidOption;
 use Illuminate\Database\Eloquent\Model;
 use Ramsey\Uuid\Uuid;
 
@@ -33,7 +32,7 @@ trait HasUuid
     /**
      * Boot the trait.
      */
-    protected static function bootHasUuid(): void
+    protected static function bootHasUuid()
     {
         static::creating(function (Model $model) {
             $model->addUuid();
@@ -43,7 +42,7 @@ trait HasUuid
     /**
      * Add the uuid to the model.
      */
-    protected function addUuid(): void
+    protected function addUuid()
     {
         $this->uuidOptions = $this->getUuidOptions();
 
@@ -100,7 +99,7 @@ trait HasUuid
     /**
      * This function will throw an exception when any of the options is missing or invalid.
      */
-    protected function guardAgainstInvalidUuidOptions(): void
+    protected function guardAgainstInvalidUuidOptions()
     {
         if (!strlen($this->uuidOptions->uuidField)) {
             throw InvalidOption::missingUuidField();
