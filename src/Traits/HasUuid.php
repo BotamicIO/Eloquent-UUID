@@ -13,10 +13,10 @@ declare(strict_types=1);
 
 namespace BrianFaust\Uuid\Traits;
 
-use Ramsey\Uuid\Uuid;
+use BrianFaust\Uuid\Exceptions\InvalidOption;
 use BrianFaust\Uuid\UuidOptions;
 use Illuminate\Database\Eloquent\Model;
-use BrianFaust\Uuid\Exceptions\InvalidOption;
+use Ramsey\Uuid\Uuid;
 
 trait HasUuid
 {
@@ -103,7 +103,7 @@ trait HasUuid
      */
     protected function guardAgainstInvalidUuidOptions()
     {
-        if (! strlen($this->uuidOptions->uuidField)) {
+        if (!strlen($this->uuidOptions->uuidField)) {
             throw InvalidOption::missingUuidField();
         }
     }
