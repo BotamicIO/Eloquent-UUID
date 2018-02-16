@@ -1,5 +1,10 @@
 # Eloquent UUID
 
+[![Build Status](https://img.shields.io/travis/faustbrian/Eloquent-UUID/master.svg?style=flat-square)](https://travis-ci.org/faustbrian/Eloquent-UUID)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/faustbrian/eloquent-uuid.svg?style=flat-square)]()
+[![Latest Version](https://img.shields.io/github/release/faustbrian/Eloquent-UUID.svg?style=flat-square)](https://github.com/faustbrian/Eloquent-UUID/releases)
+[![License](https://img.shields.io/packagist/l/faustbrian/Eloquent-UUID.svg?style=flat-square)](https://packagist.org/packages/faustbrian/Eloquent-UUID)
+
 ## Installation
 
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
@@ -52,7 +57,7 @@ $ phpunit
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to Brian Faust at hello@brianfaust.me. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to hello@brianfaust.me. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
