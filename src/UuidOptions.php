@@ -5,13 +5,13 @@ declare(strict_types=1);
 /*
  * This file is part of Eloquent UUID.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Uuid;
+namespace Artisanry\Uuid;
 
 use Ramsey\Uuid\Uuid;
 
@@ -37,7 +37,7 @@ class UuidOptions
     /**
      * @param string $fieldName
      *
-     * @return \BrianFaust\Uuid\UuidOptions
+     * @return \Artisanry\Uuid\UuidOptions
      */
     public function saveTo(string $fieldName): self
     {
@@ -49,7 +49,7 @@ class UuidOptions
     /**
      * @param string $strategy
      *
-     * @return \BrianFaust\Uuid\UuidOptions
+     * @return \Artisanry\Uuid\UuidOptions
      */
     public function useStrategy(string $strategy): self
     {
@@ -61,7 +61,7 @@ class UuidOptions
     /**
      * @param string $namespace
      *
-     * @return \BrianFaust\Uuid\UuidOptions
+     * @return \Artisanry\Uuid\UuidOptions
      */
     public function withNamespace(string $namespace): self
     {
@@ -73,7 +73,7 @@ class UuidOptions
     /**
      * @param string $name
      *
-     * @return \BrianFaust\Uuid\UuidOptions
+     * @return \Artisanry\Uuid\UuidOptions
      */
     public function withName(string $name): self
     {

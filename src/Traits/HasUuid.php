@@ -5,22 +5,22 @@ declare(strict_types=1);
 /*
  * This file is part of Eloquent UUID.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Uuid\Traits;
+namespace Artisanry\Uuid\Traits;
 
-use BrianFaust\Uuid\Exceptions\InvalidOption;
-use BrianFaust\Uuid\UuidOptions;
+use Artisanry\Uuid\Exceptions\InvalidOption;
+use Artisanry\Uuid\UuidOptions;
 use Illuminate\Database\Eloquent\Model;
 use Ramsey\Uuid\Uuid;
 
 trait HasUuid
 {
-    /** @var \BrianFaust\Uuid\UuidOptions */
+    /** @var \Artisanry\Uuid\UuidOptions */
     protected $uuidOptions;
 
     /**

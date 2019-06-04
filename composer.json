@@ -1,12 +1,12 @@
 {
-    "name": "faustbrian/eloquent-uuid",
+    "name": "artisanry/eloquent-uuid",
     "description": "Generate UUIDs when saving Eloquent models",
-    "keywords": ["laravel", "framework", "Laravel-UUID", "Laravel UUID", "Brian Faust", "faustbrian"],
+    "keywords": ["laravel", "framework", "Laravel-UUID", "Laravel UUID"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.1",
@@ -21,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Uuid\\": "src/"
+            "Artisanry\\Uuid\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Uuid\\": "tests"
+            "Artisanry\\Tests\\Uuid\\": "tests"
         }
     },
     "config": {
@@ -39,7 +39,7 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\Uuid\\UuidServiceProvider"
+                "Artisanry\\Uuid\\UuidServiceProvider"
             ]
         }
     },
